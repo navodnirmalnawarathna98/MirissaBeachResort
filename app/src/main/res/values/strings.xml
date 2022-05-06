@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MirissaBeachResort</string>
+    <string name="whale_txt">Whale  Watching</string>
+    <string name="txt_whale" />
 </resources>
