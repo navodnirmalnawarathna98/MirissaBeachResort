@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whbackground"
+    tools:context=".WhaleForm">
+
+
+    <ImageView
+        android:id="@+id/whimageView"
+        android:layout_width="321dp"
+        android:layout_height="583dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whback" />
+
+    <TextView
+        android:id="@+id/txt_whale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_whale"
+        android:text="Whale  Watching"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:background="@drawable/whformstyle"
+        android:drawableStart="@drawable/whformstyle"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/edittxt_name"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toTopOf="@+id/whimageView"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <EditText
+        android:id="@+id/nic"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:background="@drawable/whformstyle"
+        android:drawableStart="@drawable/whformstyle"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/edittxt_nic"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textColorHint="#8D6E63"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.038"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/contactno"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:background="@drawable/whformstyle"
+        android:drawableStart="@drawable/whformstyle"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/edittxt_contactno"
+        android:inputType="number"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/nic"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <EditText
+        android:id="@+id/arrivaldate"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:background="@drawable/whformstyle"
+        android:drawableStart="@drawable/whformstyle"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/edittxt_arrivaldate"
+        android:inputType="date"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/contactno"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <EditText
+        android:id="@+id/participants"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:background="@drawable/whformstyle"
+        android:drawableStart="@drawable/whformstyle"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/edittxt_participants"
+        android:inputType="date"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/contactno"
+        app:layout_constraintVertical_bias="0.239" />
+
+    <RadioButton
+        android:id="@+id/deepfishing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/radio_deepfishing"
+        android:text="Deep Fishing"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/participants"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioButton
+        android:id="@+id/fishing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/radio_fishing"
+        android:text="Fishing"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/participants"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <TextView
+        android:id="@+id/amount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_amount1"
+        android:text="Rs/= 3500.00"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toEndOf="@+id/deepfishing"
+        app:layout_constraintTop_toBottomOf="@+id/participants"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_amount2"
+        android:text="Rs/= 2500.00"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toEndOf="@+id/deepfishing"
+        app:layout_constraintTop_toBottomOf="@+id/participants"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <Button
+        android:id="@+id/btn_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whbuttonstyle"
+        android:hint="@string/btn_cal"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/fishing"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whbuttonstyle"
+        android:hint="@string/btn_pay"
+        android:text="Payment"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cal"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <TextView
+        android:id="@+id/txt_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_value"
+        android:text="Value"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toEndOf="@+id/deepfishing"
+        app:layout_constraintTop_toBottomOf="@+id/participants"
+        app:layout_constraintVertical_bias="0.573" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
