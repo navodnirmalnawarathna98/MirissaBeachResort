@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MirissaBeachResort">
         <activity
+            android:name=".FoodBuffet_Buffet_Dis2"
+            android:exported="false" />
+        <activity
+            android:name=".FoodBuffet_Buffet_Dis1"
+            android:exported="false" />
+        <activity
             android:name=".WhaleForm"
             android:exported="false" />
         <activity
