@@ -2,4 +2,16 @@
     <string name="app_name">MirissaBeachResort</string>
     <string name="whale_txt">Whale  Watching</string>
     <string name="txt_whale" />
+    <string name="edittxt_name">Full Name</string>
+    <string name="edittxt_nic">Nic</string>
+    <string name="edittxt_contactno">Contact No</string>
+    <string name="edittxt_arrivaldate">Arrival Date</string>
+    <string name="edittxt_participants">Participants</string>
+    <string name="radio_deepfishing">Deep Fishing</string>
+    <string name="radio_fishing">Fishing</string>
+    <string name="txt_amount1" />
+    <string name="txt_amount2" />
+    <string name="btn_cal" />
+    <string name="txt_value" />
+    <string name="btn_pay" />
 </resources>
