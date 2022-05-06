@@ -21,4 +21,21 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),Login.class));
         finish();
     }
+
+    public void roomBooking(View view) {
+        startActivity(new Intent(getApplicationContext(),RoomBooking.class));
+    }
+
+    public void eventBooking(View view) {
+        startActivity(new Intent(getApplicationContext(),EventBooking.class));
+    }
+
+    public void foodBuffet(View view) {
+        startActivity(new Intent(getApplicationContext(),FoodBuffet.class));
+    }
+
+    public void whaleFishing(View view) {
+        startActivity(new Intent(getApplicationContext(),WhaleFishing.class));
+    }
+
 }

@@ -15,6 +15,18 @@
             android:name=".WhaleForm"
             android:exported="false" />
         <activity
+            android:name=".WhaleFishing"
+            android:exported="false" />
+        <activity
+            android:name=".FoodBuffet"
+            android:exported="false" />
+        <activity
+            android:name=".EventBooking"
+            android:exported="false" />
+        <activity
+            android:name=".RoomBooking"
+            android:exported="false" />
+        <activity
             android:name=".Login"
             android:exported="false" />
         <activity
