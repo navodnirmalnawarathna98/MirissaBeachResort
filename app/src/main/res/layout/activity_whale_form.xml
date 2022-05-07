@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whbackground"
+    tools:context=".WhaleForm">
+
+
+    <ImageView
+        android:id="@+id/whimageView"
+        android:layout_width="321dp"
+        android:layout_height="583dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whback" />
+
+    <TextView
+        android:id="@+id/txt_whale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_whale"
+        android:text="Whale  Watching"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:background="@drawable/whformstyle"
+        android:drawableStart="@drawable/whformstyle"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/edittxt_name"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toTopOf="@+id/whimageView"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <EditText
+        android:id="@+id/nic"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:background="@drawable/whformstyle"
+        android:drawableStart="@drawable/whformstyle"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/edittxt_nic"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textColorHint="#8D6E63"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <EditText
+        android:id="@+id/contactno"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:background="@drawable/whformstyle"
+        android:drawableStart="@drawable/whformstyle"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/edittxt_contactno"
+        android:inputType="number"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/nic"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <EditText
+        android:id="@+id/arrivaldate"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:background="@drawable/whformstyle"
+        android:drawableStart="@drawable/whformstyle"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/edittxt_arrivaldate"
+        android:inputType="date"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/contactno"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <EditText
+        android:id="@+id/selectboat"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:background="@drawable/whformstyle"
+        android:drawableStart="@drawable/whformstyle"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/edittxt_selectboat"
+        android:inputType="date"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/contactno"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <Button
+        android:id="@+id/btn_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/whbuttonstyle"
+        android:hint="@string/btn_cal"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/selectboat"
+        app:layout_constraintVertical_bias="0.945" />
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whbuttonstyle"
+        android:hint="@string/btn_pay"
+        android:text="Payment"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cal"
+        app:layout_constraintVertical_bias="0.454" />
+
+    <TextView
+        android:id="@+id/txt_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="96dp"
+        android:hint="@string/txt_value"
+        android:text="Value"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_cal"
+        app:layout_constraintTop_toBottomOf="@+id/selectboat"
+        app:layout_constraintVertical_bias="0.951" />
+
+    <EditText
+        android:id="@+id/txtadult"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:background="@drawable/whformstyle"
+        android:drawableStart="@drawable/whformstyle"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/edittxt_adults"
+        android:inputType="date"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/contactno"
+        app:layout_constraintVertical_bias="0.373" />
+
+
+    <EditText
+        android:id="@+id/txtchildren"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:background="@drawable/whformstyle"
+        android:drawableStart="@drawable/whformstyle"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/editxt_children"
+        android:inputType="date"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/contactno"
+        app:layout_constraintVertical_bias="0.552" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

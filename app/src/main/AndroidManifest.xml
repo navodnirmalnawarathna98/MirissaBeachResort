@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mirissabeachresort">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +11,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MirissaBeachResort">
+        <activity
+            android:name=".CartListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShowDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodBuffet_Buffet_Dis2"
+            android:exported="false" />
+        <activity
+            android:name=".FoodBuffet_Buffet_Dis1"
+            android:exported="false" />
+        <activity
+            android:name=".WhaleForm"
+            android:exported="false" />
+        <activity
+            android:name=".WhaleFishing"
+            android:exported="false" />
+        <activity
+            android:name=".FoodBuffet"
+            android:exported="false" />
+        <activity
+            android:name=".EventBooking"
+            android:exported="false" />
+        <activity
+            android:name=".RoomBooking"
+            android:exported="false" />
         <activity
             android:name=".Login"
             android:exported="false" />
