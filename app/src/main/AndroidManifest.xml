@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MirissaBeachResort">
         <activity
+            android:name=".WhaleWatching_Details"
+            android:exported="false" />
+        <activity
             android:name=".CartListActivity"
             android:exported="false" />
         <activity
