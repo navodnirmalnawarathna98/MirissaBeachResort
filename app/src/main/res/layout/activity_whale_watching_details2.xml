@@ -2,192 +2,185 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/hint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/whbackground"
-    tools:context=".WhaleForm">
-
+    tools:context=".WhaleWatching_Details2">
 
     <ImageView
-        android:id="@+id/whimageView"
-        android:layout_width="319dp"
-        android:layout_height="580dp"
+        android:id="@+id/header_background"
+        android:layout_width="412dp"
+        android:layout_height="291dp"
+        android:scaleType="fitXY"
+        android:transitionName="background_image_transition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whale_details2" />
+
+    <ImageView
+        android:id="@+id/down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        app:layout_constraintEnd_toEndOf="@+id/header_background"
+        app:layout_constraintTop_toTopOf="@+id/header_background"
+        android:src="@drawable/ic_down_arrow"/>
+
+
+    <ScrollView
+        android:id="@+id/thied_scrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/whback" />
+        app:layout_constraintTop_toBottomOf="@+id/header_background">
 
-    <TextView
-        android:id="@+id/txt_whale"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/txt_whale"
-        android:text="Whale  Watching"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/whimageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.551" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="263dp"
-        android:layout_height="48dp"
-        android:background="@drawable/whformstyle"
-        android:drawableStart="@drawable/whformstyle"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="@string/edittxt_name"
-        android:inputType="textPersonName"
-        android:paddingStart="20dp"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
-        app:layout_constraintEnd_toEndOf="@+id/whimageView"
-        app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toTopOf="@+id/whimageView"
-        app:layout_constraintVertical_bias="0.041" />
+            <TextView
+                android:id="@+id/third_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Whale Watching"
+                android:textColor="@color/teal_700"
+                android:textSize="24sp"/>
 
-    <EditText
-        android:id="@+id/nic"
-        android:layout_width="263dp"
-        android:layout_height="48dp"
-        android:autofillHints=""
-        android:background="@drawable/whformstyle"
-        android:drawableStart="@drawable/whformstyle"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="@string/edittxt_nic"
-        android:inputType="textPersonName"
-        android:paddingStart="20dp"
-        android:textColorHint="#8D6E63"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
-        app:layout_constraintEnd_toEndOf="@+id/whimageView"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        app:layout_constraintVertical_bias="0.021" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/contactno"
-        android:layout_width="263dp"
-        android:layout_height="48dp"
-        android:background="@drawable/whformstyle"
-        android:drawableStart="@drawable/whformstyle"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="@string/edittxt_contactno"
-        android:inputType="number"
-        android:paddingStart="20dp"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
-        app:layout_constraintEnd_toEndOf="@+id/whimageView"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/nic"
-        app:layout_constraintVertical_bias="0.031" />
+                <RatingBar
+                    android:id="@+id/third_ratingbar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/colorAccent"
+                    android:rating="5"
+                    android:stepSize="0.5"/>
 
-    <EditText
-        android:id="@+id/arrivaldate"
-        android:layout_width="263dp"
-        android:layout_height="48dp"
-        android:background="@drawable/whformstyle"
-        android:drawableStart="@drawable/whformstyle"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="@string/edittxt_arrivaldate"
-        android:inputType="date"
-        android:paddingStart="20dp"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
-        app:layout_constraintEnd_toEndOf="@+id/whimageView"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/contactno"
-        app:layout_constraintVertical_bias="0.034" />
+                <TextView
+                    android:id="@+id/second_rating_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="4.75"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"/>
 
-    <EditText
-        android:id="@+id/selectboat"
-        android:layout_width="263dp"
-        android:layout_height="48dp"
-        android:background="@drawable/whformstyle"
-        android:drawableStart="@drawable/whformstyle"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="@string/edittxt_selectboat"
-        android:inputType="date"
-        android:paddingStart="20dp"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
-        app:layout_constraintEnd_toEndOf="@+id/whimageView"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/contactno"
-        app:layout_constraintVertical_bias="0.205" />
+                <TextView
+                    android:id="@+id/second_rating_number2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="(981)"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"/>
 
-    <Button
-        android:id="@+id/btn_pay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
-        android:background="@drawable/whbuttonstyle"
-        android:hint="@string/btn_pay"
-        android:text="Payment"
-        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
-        app:layout_constraintEnd_toEndOf="@+id/whimageView"
-        app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/txtchildren" />
+            </LinearLayout>
 
-    <EditText
-        android:id="@+id/txtadult"
-        android:layout_width="263dp"
-        android:layout_height="48dp"
-        android:background="@drawable/whformstyle"
-        android:drawableStart="@drawable/whformstyle"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="@string/edittxt_adults"
-        android:inputType="date"
-        android:paddingStart="20dp"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
-        app:layout_constraintEnd_toEndOf="@+id/whimageView"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/contactno"
-        app:layout_constraintVertical_bias="0.373" />
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="About"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"/>
 
+            <TextView
+                android:id="@+id/about_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="The best time to go whale watching in Mirissa is from  November to April. Ocean is calm and whales migrate from the southern hemisphare to the northen hemisphere. From May to October is off-season: ocean is rough and it is not worth to go. Chances of spotting whales are very low, chances of getting seasickness very heigh. So please don't send us bookings for off-season. "
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"/>
 
-    <EditText
-        android:id="@+id/txtchildren"
-        android:layout_width="263dp"
-        android:layout_height="48dp"
-        android:background="@drawable/whformstyle"
-        android:drawableStart="@drawable/whformstyle"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="@string/editxt_children"
-        android:inputType="date"
-        android:paddingStart="20dp"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
-        app:layout_constraintEnd_toEndOf="@+id/whimageView"
-        app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/contactno"
-        app:layout_constraintVertical_bias="0.552" />
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="LKR 3,800/="
+                android:textColor="@color/red_dark"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Offer Details"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/details_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/open_sans_regular"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/starters_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/open_sans_regular"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/roadmap_button"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/rounded_corner_orange_btn"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:onClick="whalebooking"
+                android:text="  B  O  O  K    N  O  W  "
+                android:textColor="@color/white"
+                android:textColorLink="@color/teal_200"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -347,6 +340,5 @@
 
         </com.google.android.material.floatingactionbutton.FloatingActionButton>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
