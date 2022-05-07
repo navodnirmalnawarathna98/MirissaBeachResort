@@ -50,14 +50,16 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="@+id/whimageView"
         app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="@+id/whimageView"
         app:layout_constraintTop_toTopOf="@+id/whimageView"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintVertical_bias="0.031" />
 
     <EditText
         android:id="@+id/nic"
         android:layout_width="263dp"
         android:layout_height="48dp"
+        android:autofillHints=""
         android:background="@drawable/whformstyle"
         android:drawableStart="@drawable/whformstyle"
         android:drawablePadding="10dp"
@@ -70,10 +72,10 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="@+id/whimageView"
         app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="@+id/whimageView"
         app:layout_constraintTop_toBottomOf="@+id/name"
-        app:layout_constraintVertical_bias="0.038"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.021" />
 
     <EditText
         android:id="@+id/contactno"
@@ -93,7 +95,7 @@
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="@+id/whimageView"
         app:layout_constraintTop_toBottomOf="@+id/nic"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintVertical_bias="0.031" />
 
     <EditText
         android:id="@+id/arrivaldate"
@@ -113,17 +115,17 @@
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="@+id/whimageView"
         app:layout_constraintTop_toBottomOf="@+id/contactno"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintVertical_bias="0.034" />
 
     <EditText
-        android:id="@+id/participants"
+        android:id="@+id/selectboat"
         android:layout_width="263dp"
         android:layout_height="48dp"
         android:background="@drawable/whformstyle"
         android:drawableStart="@drawable/whformstyle"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="@string/edittxt_participants"
+        android:hint="@string/edittxt_selectboat"
         android:inputType="date"
         android:paddingStart="20dp"
         android:textSize="16sp"
@@ -133,70 +135,13 @@
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="@+id/whimageView"
         app:layout_constraintTop_toBottomOf="@+id/contactno"
-        app:layout_constraintVertical_bias="0.239" />
-
-    <RadioButton
-        android:id="@+id/deepfishing"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="@string/radio_deepfishing"
-        android:text="Deep Fishing"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
-        app:layout_constraintEnd_toEndOf="@+id/whimageView"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/participants"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <RadioButton
-        android:id="@+id/fishing"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="@string/radio_fishing"
-        android:text="Fishing"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
-        app:layout_constraintEnd_toEndOf="@+id/whimageView"
-        app:layout_constraintHorizontal_bias="0.126"
-        app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/participants"
-        app:layout_constraintVertical_bias="0.256" />
-
-    <TextView
-        android:id="@+id/amount1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/txt_amount1"
-        android:text="Rs/= 3500.00"
-        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
-        app:layout_constraintEnd_toEndOf="@+id/whimageView"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toEndOf="@+id/deepfishing"
-        app:layout_constraintTop_toBottomOf="@+id/participants"
-        app:layout_constraintVertical_bias="0.133" />
-
-    <TextView
-        android:id="@+id/amount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/txt_amount2"
-        android:text="Rs/= 2500.00"
-        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
-        app:layout_constraintEnd_toEndOf="@+id/whimageView"
-        app:layout_constraintHorizontal_bias="0.402"
-        app:layout_constraintStart_toEndOf="@+id/deepfishing"
-        app:layout_constraintTop_toBottomOf="@+id/participants"
-        app:layout_constraintVertical_bias="0.327" />
+        app:layout_constraintVertical_bias="0.205" />
 
     <Button
         android:id="@+id/btn_cal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
         android:background="@drawable/whbuttonstyle"
         android:hint="@string/btn_cal"
         android:text="Calculate"
@@ -204,8 +149,8 @@
         app:layout_constraintEnd_toEndOf="@+id/whimageView"
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/fishing"
-        app:layout_constraintVertical_bias="0.109" />
+        app:layout_constraintTop_toBottomOf="@+id/selectboat"
+        app:layout_constraintVertical_bias="0.945" />
 
     <Button
         android:id="@+id/btn_pay"
@@ -216,23 +161,66 @@
         android:text="Payment"
         app:layout_constraintBottom_toBottomOf="@+id/whimageView"
         app:layout_constraintEnd_toEndOf="@+id/whimageView"
-        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="@+id/whimageView"
         app:layout_constraintTop_toBottomOf="@+id/btn_cal"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintVertical_bias="0.454" />
 
     <TextView
         android:id="@+id/txt_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="96dp"
         android:hint="@string/txt_value"
         android:text="Value"
         app:layout_constraintBottom_toBottomOf="@+id/whimageView"
         app:layout_constraintEnd_toEndOf="@+id/whimageView"
-        app:layout_constraintHorizontal_bias="0.402"
-        app:layout_constraintStart_toEndOf="@+id/deepfishing"
-        app:layout_constraintTop_toBottomOf="@+id/participants"
-        app:layout_constraintVertical_bias="0.573" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_cal"
+        app:layout_constraintTop_toBottomOf="@+id/selectboat"
+        app:layout_constraintVertical_bias="0.951" />
+
+    <EditText
+        android:id="@+id/txtadult"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:background="@drawable/whformstyle"
+        android:drawableStart="@drawable/whformstyle"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/edittxt_adults"
+        android:inputType="date"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/contactno"
+        app:layout_constraintVertical_bias="0.373" />
+
+
+    <EditText
+        android:id="@+id/txtchildren"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:background="@drawable/whformstyle"
+        android:drawableStart="@drawable/whformstyle"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/editxt_children"
+        android:inputType="date"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whimageView"
+        app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintStart_toStartOf="@+id/whimageView"
+        app:layout_constraintTop_toBottomOf="@+id/contactno"
+        app:layout_constraintVertical_bias="0.552" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
