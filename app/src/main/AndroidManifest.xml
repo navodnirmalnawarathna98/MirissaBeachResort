@@ -12,6 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MirissaBeachResort">
         <activity
+            android:name=".EventBooking_Dining_Dis2"
+            android:exported="false" />
+        <activity
+            android:name=".EventBooking_Dining_Dis1"
+            android:exported="false" />
+        <activity
+            android:name=".EventBooking_Beach_Dis2"
+            android:exported="false" />
+        <activity
+            android:name=".EventBooking_Beach_Dis1"
+            android:exported="false" />
+        <activity
+            android:name=".EventBooking_GrandBallroom_Dis2"
+            android:exported="false" />
+        <activity
+            android:name=".EventBooking_GrandBallroom_Dis1"
+            android:exported="false" />
+        <activity
+            android:name=".EventBooking_GregoryBallroom_Dis2"
+            android:exported="false" />
+        <activity
+            android:name=".EventBooking_GregoryBallroom_Dis1"
+            android:exported="false" />
+        <activity
             android:name=".WhaleWatching_Details"
             android:exported="false" />
         <activity
