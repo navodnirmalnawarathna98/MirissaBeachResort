@@ -21,6 +21,48 @@
             android:name=".FoodBuffet_Booking_Form"
             android:exported="false" />
         <activity
+            android:name=".RoomBooking_Room_Dis4"
+            android:exported="false" />
+        <activity
+            android:name=".RoomBooking_Room_Dis3"
+            android:exported="false" />
+        <activity
+            android:name=".RoomBooking_Room_Dis2"
+            android:exported="false" />
+        <activity
+            android:name=".RoomBooking_Room_Dis1"
+            android:exported="false" />
+        <activity
+            android:name=".WhaleWatching_Details2"
+            android:exported="false" />
+        <activity          
+            android:name=".EventBooking_Dining_Dis2"
+            android:exported="false" />
+        <activity
+            android:name=".EventBooking_Dining_Dis1"
+            android:exported="false" />
+        <activity
+            android:name=".EventBooking_Beach_Dis2"
+            android:exported="false" />
+        <activity
+            android:name=".EventBooking_Beach_Dis1"
+            android:exported="false" />
+        <activity
+            android:name=".EventBooking_GrandBallroom_Dis2"
+            android:exported="false" />
+        <activity
+            android:name=".EventBooking_GrandBallroom_Dis1"
+            android:exported="false" />
+        <activity
+            android:name=".EventBooking_GregoryBallroom_Dis2"
+            android:exported="false" />
+        <activity
+            android:name=".EventBooking_GregoryBallroom_Dis1"
+            android:exported="false" />
+        <activity
+            android:name=".WhaleWatching_Details"
+            android:exported="false" />
+        <activity
             android:name=".CartListActivity"
             android:exported="false" />
         <activity
