@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MirissaBeachResort">
         <activity
+            android:name=".CusBuffetBooking"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".FoodBuffet_Booking_Form"
+            android:exported="false" />
+        <activity
             android:name=".CartListActivity"
             android:exported="false" />
         <activity
