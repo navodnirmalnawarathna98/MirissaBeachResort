@@ -85,4 +85,8 @@ public class FoodBuffet extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),FoodBuffet_Buffet_Dis1.class));
     }
 
+    public void profile(View view) {
+        startActivity(new Intent(getApplicationContext(),FoodBuffet_Buffet_Dis1.class));
+    }
+
 }
