@@ -38,4 +38,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),WhaleFishing.class));
     }
 
+
+    public void profile(View view) {
+        startActivity(new Intent(getApplicationContext(),Profile.class));
+    }
+
 }
