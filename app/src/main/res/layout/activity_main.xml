@@ -176,6 +176,7 @@
                         android:id="@+id/imageView5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:onClick="profile"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/bottom_btn2" />
 
