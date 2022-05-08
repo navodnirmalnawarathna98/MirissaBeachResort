@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-public class WhaleWatching_Details extends AppCompatActivity {
+public class RoomBooking_Room_Dis3 extends AppCompatActivity {
 
     ImageView second_back_arrow, second_arrow_up;
     TextView second_title, second_subtitle, second_rating_number, second_rating_number2, more_details;
@@ -25,11 +25,11 @@ public class WhaleWatching_Details extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_whale_watching_details);
-
+        setContentView(R.layout.activity_room_booking_room_dis3);
 
         second_back_arrow = findViewById(R.id.second_back_arrow);
         second_arrow_up = findViewById(R.id.second_arrow_up);
@@ -44,7 +44,7 @@ public class WhaleWatching_Details extends AppCompatActivity {
         second_back_arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(WhaleWatching_Details.this, MainActivity.class);
+                Intent intent = new Intent(RoomBooking_Room_Dis3.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -79,14 +79,19 @@ public class WhaleWatching_Details extends AppCompatActivity {
 
 
         second_arrow_up.setOnClickListener(view -> {
-            Intent intent = new Intent(WhaleWatching_Details.this, WhaleWatching_Details2.class);
+            Intent intent = new Intent(RoomBooking_Room_Dis3.this, RoomBooking_Room_Dis4.class);
 
             Pair[] pairs = new Pair[1];
             pairs[0] = new Pair<View, String>(second_arrow_up, "background_image_transition");
 
-            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(WhaleWatching_Details.this, pairs);
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(RoomBooking_Room_Dis3.this, pairs);
 
             startActivity(intent, options.toBundle());
         });
+
+
+
+
+
     }
 }

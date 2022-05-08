@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FoodBuffet_Buffet_Dis2">
+    tools:context=".RoomBooking_Room_Dis2">
 
     <ImageView
         android:id="@+id/header_background"
@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/foodbuffet_buffet_dis3" />
+        app:srcCompat="@drawable/roombooking_room_dis2" />
 
     <ImageView
         android:id="@+id/down_arrow"
@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/open_sans_bold"
-                android:text="WEEKEND LUNCH BUFFET     OFFER"
+                android:text="Deluxe Room City Facing"
                 android:textColor="@color/teal_700"
                 android:textSize="24sp"/>
 
@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:fontFamily="@font/open_sans_bold"
-                android:text="About"
+                android:text="BED &amp; BATH"
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp"/>
 
@@ -117,7 +117,7 @@
                 android:layout_marginTop="10dp"
                 android:alpha="0.5"
                 android:fontFamily="@font/open_sans_regular"
-                android:text="Looking for hotel buffet offers in Sri Lanka? Get together for an unforgettable meal at one of the most beautiful beachside hotels in Sri Lanka! Relax and indulge in a lavish lunch buffet on weekends that includes tempting worldwide delicacies. Enjoy a welcome drink and afternoon tea/coffee with a slice of cake upon arrival."
+                android:text="Rollaway beds are available on additional charge on a per night basis Goose down duvets &amp; pillows Marble bathroom with bathtub &amp; separate shower Full-length mirror, hair dryer &amp; scale OR Lit makeup mirror, hair dryer &amp; scale 250 thread count, cotton blend bed linen Marble bathroom with bathtub or separate shower"
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp"/>
 
@@ -127,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:fontFamily="@font/open_sans_bold"
-                android:text="LKR 3,800/="
+                android:text="LKR 35,800/=                                                                           starting Rate/Night"
                 android:textColor="@color/red_dark"
                 android:textSize="14sp"/>
 
@@ -137,7 +137,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:fontFamily="@font/open_sans_bold"
-                android:text="Offer Details"
+                android:text="OTHER CONVENIENCES"
                 android:textColor="@color/colorPrimary"
                 android:textSize="14sp" />
 
@@ -148,7 +148,17 @@
                 android:layout_marginTop="10dp"
                 android:alpha="0.5"
                 android:fontFamily="@font/open_sans_regular"
-                android:text="LKR 3,800/- nett per adult. International buffet lunch with afternoon tea / coffee and cake. Overlooking Marawila Beach. Children below 12 years – HALF RATE. Children under 5 years – FREE. A group of 10 persons will get a FREE changing room with facilities."
+                android:text="24-hour in-room dining\n Premium Wi-Fi at nominal charge\n Complimentary newspapers\n
+Daily housekeeping &amp; turndown service\n 24-hour laundry service\nIron &amp; ironing board on request\n 24-hour on-call doctor &amp; nurse\n
+Tea-coffee maker\n
+Choice of smoking &amp; non-smoking rooms(subject to availability)\n
+Plush bathrobes &amp; slippers\n
+Complimentary basic Wi-Fi\n
+Well-stocked minibar\n
+Bedroom &amp; bathroom\n
+DVD player DVDs on request\n
+Cordless telephones with voicemail &amp; data capabilities\n
+32-inch flat-screen LCD TV"
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp" />
 
@@ -158,7 +168,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:fontFamily="@font/open_sans_bold"
-                android:text="Welcome Drink"
+                android:text="Best Available Rate"
                 android:textColor="@color/teal_200"
                 android:textSize="14sp" />
 
@@ -169,7 +179,8 @@
                 android:layout_marginTop="10dp"
                 android:alpha="0.5"
                 android:fontFamily="@font/open_sans_regular"
-                android:text="Mixed fruit freezy"
+                android:text="Rate description: Best Available Rate, is the lowest available rate of the day with a flexible cancellation. Room only rate. No minimum length of stay required. Additional taxes applicable are extra.
+            "
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp" />
 
@@ -179,7 +190,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:fontFamily="@font/open_sans_bold"
-                android:text="Starters"
+                android:text="Bed Breakfast and More"
                 android:textColor="@color/teal_200"
                 android:textSize="14sp" />
 
@@ -190,7 +201,7 @@
                 android:layout_marginTop="10dp"
                 android:alpha="0.5"
                 android:fontFamily="@font/open_sans_regular"
-                android:text="Assorted salad greens/ Coleslaw salad, Tomato onion salad/ Tuna salad, Chef salad/ Pasta with sausage salad, 03 kinds of dressings"
+                android:text="Rate description: Rate inclusive of buffet breakfast at ports of call restaurant. Flexible cancellation policy. No minimum length of stay required. Additional taxes applicable are extra."
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp" />
 
@@ -200,7 +211,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:fontFamily="@font/open_sans_bold"
-                android:text="Mains"
+                android:text="Urban Getaways"
                 android:textColor="@color/teal_200"
                 android:textSize="14sp" />
 
@@ -211,7 +222,7 @@
                 android:layout_marginTop="10dp"
                 android:alpha="0.5"
                 android:fontFamily="@font/open_sans_regular"
-                android:text="Seafood pilau rice, Wok-fried Chinese vegetable fried noodles, Sweet &amp; sour mixed seafood, Chicken chutney roast, Sauteed vegetables, Mexican potatoes, Vegetable lasagne, Pork vegetable curry, Seafood moju, Dhal Marani, Traditional Sri Lankan condiments"
+                android:text="Rate description: Add more value to your stay with our Urban Getaways offer. This includes breakfast, Dinner, one level upgrade to the next room category, except suites subject to availability, 20 percent off at Sports Centre. WiFi for 4 devices. Taxes Extra."
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp" />
 
@@ -221,7 +232,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:fontFamily="@font/open_sans_bold"
-                android:text="Desserts"
+                android:text="Cancellation policy"
                 android:textColor="@color/teal_200"
                 android:textSize="14sp" />
 
@@ -232,7 +243,7 @@
                 android:layout_marginTop="10dp"
                 android:alpha="0.5"
                 android:fontFamily="@font/open_sans_regular"
-                android:text="Cream caramel/ Watalappan, Chocolate mousse, Strawberry mousse/ Fresh fruit salad"
+                android:text=" Free cancellation by 2PM-2 days prior to arrival to avoid a penalty of 1 night charge plus any applicable taxes &amp; fees."
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp" />
 
@@ -246,7 +257,6 @@
                 android:paddingLeft="50dp"
                 android:paddingRight="50dp"
                 android:text="  B  O  O  K    N  O  W  "
-                android:onClick="buffetBooking"
                 android:textColor="@color/white"
                 android:textColorLink="@color/teal_200"
                 android:textSize="20sp"
@@ -315,7 +325,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="profile"
                         app:srcCompat="@drawable/bottom_btn2" />
 
                     <TextView
@@ -417,6 +426,7 @@
 
         </com.google.android.material.floatingactionbutton.FloatingActionButton>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

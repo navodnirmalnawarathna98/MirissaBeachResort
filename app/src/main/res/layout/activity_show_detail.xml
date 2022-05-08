@@ -94,7 +94,7 @@
         android:textStyle="bold"
         android:elevation="3dp"
         android:layout_margin="16dp"
-        android:background="@drawable/orange_button"
+        android:background="@drawable/blue_button"
         android:gravity="center"
         android:textSize="23sp"
         android:textColor="#ffffff"

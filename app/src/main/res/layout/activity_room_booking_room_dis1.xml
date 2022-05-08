@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/whale_details"
-    tools:context=".WhaleWatching_Details"
+    tools:context=".RoomBooking_Room_Dis1"
+    android:background="@drawable/roombooking_dis1"
     android:transitionName="background_image_transition">
 
     <ImageView
@@ -29,7 +29,7 @@
         android:layout_marginStart="18dp"
         android:layout_marginTop="420dp"
         android:layout_marginEnd="18dp"
-        android:text="Whale Watching"
+        android:text="Deluxe Room Ocean Facing"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:fontFamily="@font/open_sans_bold"
@@ -46,7 +46,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="18dp"
         android:alpha="0.5"
-        android:text="Whale and dolphin watching in Mirissa is one of the most exciting water activities you can do during your holiday in Sri Lanka. Often spotted blue whales are the biggest animals in the world and Mirissa is the best place for whale and dolphin watching tours in Sri Lanka. "
+        android:text="The large rooms are a luxurious retreat in the middle of the city, with captivating views of Colombo’s vibrant streets.\n35 Sq Mt,Complimentary WiFi,Up to 3 guests,\n Beds-Twin/Queen"
         android:textColor="@color/white"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +64,7 @@
         android:max="5"
         android:numStars="5"
         android:progressTint="#ECC131"
-        android:rating="5"
+        android:rating="3.5"
         android:stepSize="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/second_subtitle" />
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="13dp"
-        android:text="4.75"
+        android:text="3.5"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="15sp"
@@ -88,17 +88,33 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
-        android:text="(981)"
+        android:text="(853)"
         android:textColor="@color/white"
         android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@+id/second_rating_number"
         app:layout_constraintTop_toTopOf="@+id/second_rating_number"/>
+
+    <ImageView
+        android:id="@+id/second_arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginRight="196dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_ratingbar"
+        android:src="@drawable/ic_up_arrow"/>
 
     <TextView
         android:id="@+id/more_details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="30dp"
         android:text="More Details"
@@ -106,23 +122,10 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/second_arrow_up"
-        app:layout_constraintVertical_bias="0.24" />
-
-    <ImageView
-        android:id="@+id/second_arrow_up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="175dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="196dp"
-        android:src="@drawable/ic_up_arrow"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/second_ratingbar" />
+        app:layout_constraintVertical_bias="0.0"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
