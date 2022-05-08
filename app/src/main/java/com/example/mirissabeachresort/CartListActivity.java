@@ -101,5 +101,9 @@ public class CartListActivity extends AppCompatActivity {
         totalTxt.setText("$" + total);
     }
 
+    public void profile(View view) {
+        startActivity(new Intent(getApplicationContext(),FoodBuffet_Buffet_Dis1.class));
+    }
+
 
 }
