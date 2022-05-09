@@ -27,7 +27,7 @@
                 android:layout_marginTop="32dp"
                 android:text="My Cart"
                 android:textAlignment="center"
-                android:textColor="#ff3d00"
+                android:textColor="@color/teal_700"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -161,9 +161,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="16dp"
-                android:background="@drawable/orange_button"
+                android:background="@drawable/blue_button"
                 android:gravity="center"
-                android:text="CheckOut"
+                android:text="Check Out"
                 android:textColor="#ffffff"
                 android:textSize="25sp"
                 android:textStyle="bold" />
@@ -240,6 +240,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:onClick="profile"
                         app:srcCompat="@drawable/bottom_btn2" />
 
                     <TextView

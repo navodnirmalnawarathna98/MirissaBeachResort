@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/foodbuffet_buffet_dis3"
+            android:id="@+id/img1"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@color/teal_200"/>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img1"
+            android:paddingTop="5dp"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:text="   Rs 3800/=" />
+
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Customer Name"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/img1"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/agetext"
+            android:text="Age"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:layout_below="@+id/nametext"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_marginLeft="10dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phonetext"
+            android:text="Contact Number"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:layout_below="@+id/agetext"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_marginLeft="10dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailtext"
+            android:text="Email Address"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:layout_below="@+id/phonetext"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_marginLeft="10dp" />
+
+
+        <LinearLayout
+            android:layout_below="@+id/emailtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:layout_marginRight="5dp"
+                android:id="@+id/btnEdit"/>
+
+            <Button
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:layout_marginRight="5dp"
+                android:id="@+id/btnDelete"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
