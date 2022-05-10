@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginTop="20dp"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/event_gregoryballroom_dis2"
+            app:civ_border_color="@color/teal_200"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img1"
+            android:paddingTop="5dp"
+            android:text="lKR 450,000/="
+            android:textColor="@color/orange"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Customer Name"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/nictext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nametext"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="NIC"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/phonetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nictext"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Contact Number"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/emailtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phonetext"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Email Address"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/bookingDatetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailtext"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Booking Date"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/timetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookingDatetext"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Arrival Time"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/guesttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timetext"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="No OF Guests"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/guesttext"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Edit"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Delete"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

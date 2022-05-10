@@ -39,7 +39,7 @@
         android:textSize="20dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:text="Your Age"/>
+        android:text="Your NIC Number"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -48,7 +48,7 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/txtAge"/>
+        android:id="@+id/txtNic"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -57,7 +57,7 @@
         android:textSize="20dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:text="Contact Number"/>
+        android:text="Your Contact Number"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -75,7 +75,7 @@
         android:textSize="20dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:text="Email Address"/>
+        android:text="Your Email Address"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -85,6 +85,60 @@
         android:background="@drawable/rounded"
         android:gravity="center"
         android:id="@+id/txtEmail"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Your Booking Date"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:id="@+id/txtBookingDate"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Your Arrival Time"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:id="@+id/txtTime"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Number Of Guest"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:id="@+id/txtGuest"/>
 
     <Button
         android:layout_width="match_parent"
@@ -97,6 +151,6 @@
         android:textAllCaps="false"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/btnWUpdate"/>
+        android:id="@+id/btnUpdate"/>
 
 </LinearLayout>

@@ -13,7 +13,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -25,65 +24,74 @@ import com.orhanobut.dialogplus.ViewHolder;
 import java.util.HashMap;
 import java.util.Map;
 
-import de.hdodenhof.circleimageview.CircleImageView;
-
-public class CusBuffetBooking_Adapter extends FirebaseRecyclerAdapter<CusBuffetBooking_Model, CusBuffetBooking_Adapter.myViewHolder> {
-
-
+public class CusWhaleBooking_Adapter extends FirebaseRecyclerAdapter< CusWhaleBooking_Model , CusWhaleBooking_Adapter.myViewHolder> {
     /**
      * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
      * {@link FirebaseRecyclerOptions} for configuration options.
      *
      * @param options
      */
-    public CusBuffetBooking_Adapter(@NonNull FirebaseRecyclerOptions<CusBuffetBooking_Model> options) {
+    public CusWhaleBooking_Adapter(@NonNull FirebaseRecyclerOptions<CusWhaleBooking_Model> options) {
         super(options);
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull myViewHolder holder, final int position, @NonNull CusBuffetBooking_Model model) {
+    protected void onBindViewHolder(@NonNull myViewHolder holder, final int position, @NonNull CusWhaleBooking_Model model) {
 
         holder.name.setText(model.getName());
-        holder.age.setText(model.getAge());
+        holder.nic.setText(model.getNic());
         holder.phone.setText(model.getPhone());
-        holder.email.setText(model.getEmail());
+        holder.arrivalDate.setText(model.getArrivalDate());
+        holder.boatNo.setText(model.getBoatNo());
+        holder.adult.setText(model.getAdult());
+        holder.chlidren.setText(model.getChlidren());
 
 
 
-        holder.btnEdit.setOnClickListener(new View.OnClickListener() {
+        holder.btnWEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final DialogPlus dialogPlus = DialogPlus.newDialog(holder.name.getContext())
-                        .setContentHolder(new ViewHolder(R.layout.update_popup))
+                        .setContentHolder(new ViewHolder(R.layout.wupdate_popup))
                         .setExpanded(true, 1200)
                         .create();
 
                 View view1 = dialogPlus.getHolderView();
 
-                EditText name = view1.findViewById(R.id.txtName);
-                EditText age = view1.findViewById(R.id.txtAge);
-                EditText phone = view1.findViewById(R.id.txtPhone);
-                EditText email = view1.findViewById(R.id.txtEmail);
+                //get values From form ids
+                EditText name = view1.findViewById(R.id.Wname);
+                EditText nic = view1.findViewById(R.id.Wnic);
+                EditText phone = view1.findViewById(R.id.Wphone);
+                EditText arrivalDate = view1.findViewById(R.id.Warrivaldate);
+                EditText boatNo = view1.findViewById(R.id.Wselectboat);
+                EditText adult = view1.findViewById(R.id.txtAdult);
+                EditText children = view1.findViewById(R.id.txtChildren);
 
-                Button btnUpdate = view1.findViewById(R.id.btnAdd);
+                Button btnWpdate = view1.findViewById(R.id.btnWUpdate);
 
                 name.setText(model.getName());
-                age.setText(model.getAge());
+                nic.setText(model.getNic());
                 phone.setText(model.getPhone());
-                email.setText(model.getEmail());
+                arrivalDate.setText(model.getArrivalDate());
+                boatNo.setText(model.getBoatNo());
+                adult.setText(model.getAdult());
+                children.setText(model.getChlidren());
 
                 dialogPlus.show();
 
-                btnUpdate.setOnClickListener(new View.OnClickListener() {
+                btnWpdate.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         Map<String, Object> map = new HashMap<>();
                         map.put("name", name.getText().toString());
-                        map.put("age", age.getText().toString());
+                        map.put("nic", nic.getText().toString());
                         map.put("phone", phone.getText().toString());
-                        map.put("email", email.getText().toString());
+                        map.put("arrivalDate", arrivalDate.getText().toString());
+                        map.put("boatNo", boatNo.getText().toString());
+                        map.put("adult", adult.getText().toString());
+                        map.put("children", children.getText().toString());
 
-                        FirebaseDatabase.getInstance().getReference().child("Buffet")
+                        FirebaseDatabase.getInstance().getReference().child("WhaleFishing")
                                 .child(getRef(position).getKey()).updateChildren(map)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
@@ -104,17 +112,17 @@ public class CusBuffetBooking_Adapter extends FirebaseRecyclerAdapter<CusBuffetB
             }
         });  // finish update
 
-        holder.btnDelete.setOnClickListener(new View.OnClickListener() {
+        holder.btnWDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(holder.name.getContext());
                 builder.setTitle("Are you Sure?");
-                builder.setMessage("Deleted Buffet Booking can't Undo");
+                builder.setMessage("Deleted Whale Booking can't Undo");
 
                 builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        FirebaseDatabase.getInstance().getReference().child("Buffet")
+                        FirebaseDatabase.getInstance().getReference().child("WhaleFishing")
                                 .child(getRef(position).getKey()).removeValue();
                     }
                 });
@@ -135,26 +143,26 @@ public class CusBuffetBooking_Adapter extends FirebaseRecyclerAdapter<CusBuffetB
     @NonNull
     @Override
     public myViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cus_buffet_booking_item,parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cus_whale_booking_item,parent, false);
         return new myViewHolder(view);
     }
 
     class myViewHolder extends RecyclerView.ViewHolder{
 
-        TextView name, age, phone, email;
+        TextView name,nic,phone,arrivalDate,boatNo,adult,chlidren;
 
-        Button btnEdit, btnDelete;
+        Button btnWEdit, btnWDelete;
 
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            name = (TextView)itemView.findViewById(R.id.nametext);
-            age = (TextView)itemView.findViewById(R.id.agetext);
-            phone = (TextView)itemView.findViewById(R.id.phonetext);
-            email = (TextView)itemView.findViewById(R.id.emailtext);
+            name = (TextView)itemView.findViewById(R.id.wnametext);
+            nic = (TextView)itemView.findViewById(R.id.wnictext);
+            phone = (TextView)itemView.findViewById(R.id.wphonetext);
 
-            btnEdit = (Button)itemView.findViewById(R.id.btnEdit);
-            btnDelete = (Button)itemView.findViewById(R.id.btnDelete);
+
+            btnWEdit = (Button)itemView.findViewById(R.id.WbtnEdit);
+            btnWDelete = (Button)itemView.findViewById(R.id.WbtnDelete);
         }
     }
 }

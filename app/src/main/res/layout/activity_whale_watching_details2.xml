@@ -110,6 +110,7 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="15sp"/>
 
+
             <TextView
                 android:id="@+id/about_text"
                 android:layout_width="match_parent"
@@ -119,17 +120,7 @@
                 android:fontFamily="@font/open_sans_regular"
                 android:text="The best time to go whale watching in Mirissa is from  November to April. Ocean is calm and whales migrate from the southern hemisphare to the northen hemisphere. From May to October is off-season: ocean is rough and it is not worth to go. Chances of spotting whales are very low, chances of getting seasickness very heigh. So please don't send us bookings for off-season. "
                 android:textColor="@color/colorPrimary"
-                android:textSize="15sp"/>
-
-            <TextView
-                android:id="@+id/time"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:fontFamily="@font/open_sans_bold"
-                android:text="LKR 3,800/="
-                android:textColor="@color/red_dark"
-                android:textSize="14sp"/>
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/details"
@@ -137,9 +128,41 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:fontFamily="@font/open_sans_bold"
-                android:text="Offer Details"
+                android:text="Details"
                 android:textColor="@color/colorPrimary"
                 android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/boatprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Fare adults and children 12+ years :- Rs 2500/= \n Fare Children 5-11.99 years :- 1500/= \n Children up to 4.99 years free of charge "
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/selectboat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Boat Numbers"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/boatnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/open_sans_regular"
+                android:text=" Speed Boat :- 1 \n Normal Boat :- 2 \n Family Boat :- 3"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"/>
 
             <TextView
                 android:id="@+id/details_text"

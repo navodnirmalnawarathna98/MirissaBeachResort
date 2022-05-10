@@ -14,6 +14,15 @@
         <activity
             android:name=".OnlinePayment"
             android:exported="false" />
+      <activity
+            android:name=".Event_Gregory_Booking_Form"
+            android:exported="false" />
+        <activity
+            android:name=".CusEventGregoryBooking"
+             android:exported="false" />
+      <activity
+            android:name=".CusWhaleBooking"
+            android:exported="false" />
         <activity
             android:name=".CusBuffetBooking"
             android:exported="false" />

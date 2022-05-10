@@ -13,7 +13,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -25,10 +24,7 @@ import com.orhanobut.dialogplus.ViewHolder;
 import java.util.HashMap;
 import java.util.Map;
 
-import de.hdodenhof.circleimageview.CircleImageView;
-
-public class CusBuffetBooking_Adapter extends FirebaseRecyclerAdapter<CusBuffetBooking_Model, CusBuffetBooking_Adapter.myViewHolder> {
-
+public class CusEventGregoryBooking_Adapter extends FirebaseRecyclerAdapter<CusEventGregoryBooking_Model, CusEventGregoryBooking_Adapter.myViewHolder> {
 
     /**
      * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
@@ -36,17 +32,20 @@ public class CusBuffetBooking_Adapter extends FirebaseRecyclerAdapter<CusBuffetB
      *
      * @param options
      */
-    public CusBuffetBooking_Adapter(@NonNull FirebaseRecyclerOptions<CusBuffetBooking_Model> options) {
+    public CusEventGregoryBooking_Adapter(@NonNull FirebaseRecyclerOptions<CusEventGregoryBooking_Model> options) {
         super(options);
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull myViewHolder holder, final int position, @NonNull CusBuffetBooking_Model model) {
+    protected void onBindViewHolder(@NonNull myViewHolder holder, final int position, @NonNull CusEventGregoryBooking_Model model) {
 
         holder.name.setText(model.getName());
-        holder.age.setText(model.getAge());
+        holder.nic.setText(model.getNic());
         holder.phone.setText(model.getPhone());
         holder.email.setText(model.getEmail());
+        holder.bookingDate.setText(model.getBookingDate());
+        holder.time.setText(model.getTime());
+        holder.guest.setText(model.getGuest());
 
 
 
@@ -54,23 +53,29 @@ public class CusBuffetBooking_Adapter extends FirebaseRecyclerAdapter<CusBuffetB
             @Override
             public void onClick(View view) {
                 final DialogPlus dialogPlus = DialogPlus.newDialog(holder.name.getContext())
-                        .setContentHolder(new ViewHolder(R.layout.update_popup))
-                        .setExpanded(true, 1200)
+                        .setContentHolder(new ViewHolder(R.layout.update_popup_event))
+                        .setExpanded(true, 1600)
                         .create();
 
                 View view1 = dialogPlus.getHolderView();
 
                 EditText name = view1.findViewById(R.id.txtName);
-                EditText age = view1.findViewById(R.id.txtAge);
+                EditText nic = view1.findViewById(R.id.txtNic);
                 EditText phone = view1.findViewById(R.id.txtPhone);
                 EditText email = view1.findViewById(R.id.txtEmail);
+                EditText bookingDate = view1.findViewById(R.id.txtBookingDate);
+                EditText time = view1.findViewById(R.id.txtTime);
+                EditText guest = view1.findViewById(R.id.txtGuest);
 
-                Button btnUpdate = view1.findViewById(R.id.btnAdd);
+                Button btnUpdate = view1.findViewById(R.id.btnUpdate);
 
                 name.setText(model.getName());
-                age.setText(model.getAge());
+                nic.setText(model.getNic());
                 phone.setText(model.getPhone());
                 email.setText(model.getEmail());
+                bookingDate.setText(model.getBookingDate());
+                time.setText(model.getTime());
+                guest.setText(model.getGuest());
 
                 dialogPlus.show();
 
@@ -79,11 +84,14 @@ public class CusBuffetBooking_Adapter extends FirebaseRecyclerAdapter<CusBuffetB
                     public void onClick(View view) {
                         Map<String, Object> map = new HashMap<>();
                         map.put("name", name.getText().toString());
-                        map.put("age", age.getText().toString());
+                        map.put("nic", nic.getText().toString());
                         map.put("phone", phone.getText().toString());
                         map.put("email", email.getText().toString());
+                        map.put("bookingDate", bookingDate.getText().toString());
+                        map.put("time", time.getText().toString());
+                        map.put("guest", guest.getText().toString());
 
-                        FirebaseDatabase.getInstance().getReference().child("Buffet")
+                        FirebaseDatabase.getInstance().getReference().child("Event")
                                 .child(getRef(position).getKey()).updateChildren(map)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
@@ -114,7 +122,7 @@ public class CusBuffetBooking_Adapter extends FirebaseRecyclerAdapter<CusBuffetB
                 builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        FirebaseDatabase.getInstance().getReference().child("Buffet")
+                        FirebaseDatabase.getInstance().getReference().child("Event")
                                 .child(getRef(position).getKey()).removeValue();
                     }
                 });
@@ -135,13 +143,13 @@ public class CusBuffetBooking_Adapter extends FirebaseRecyclerAdapter<CusBuffetB
     @NonNull
     @Override
     public myViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cus_buffet_booking_item,parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cus_event_gregory_booking_item,parent, false);
         return new myViewHolder(view);
     }
 
     class myViewHolder extends RecyclerView.ViewHolder{
 
-        TextView name, age, phone, email;
+        TextView name, nic, phone, email ,bookingDate, time, guest;
 
         Button btnEdit, btnDelete;
 
@@ -149,9 +157,14 @@ public class CusBuffetBooking_Adapter extends FirebaseRecyclerAdapter<CusBuffetB
             super(itemView);
 
             name = (TextView)itemView.findViewById(R.id.nametext);
-            age = (TextView)itemView.findViewById(R.id.agetext);
+            nic = (TextView)itemView.findViewById(R.id.nictext);
             phone = (TextView)itemView.findViewById(R.id.phonetext);
             email = (TextView)itemView.findViewById(R.id.emailtext);
+            bookingDate = (TextView)itemView.findViewById(R.id.bookingDatetext);
+            time = (TextView)itemView.findViewById(R.id.timetext);
+            guest = (TextView)itemView.findViewById(R.id.guesttext);
+
+
 
             btnEdit = (Button)itemView.findViewById(R.id.btnEdit);
             btnDelete = (Button)itemView.findViewById(R.id.btnDelete);

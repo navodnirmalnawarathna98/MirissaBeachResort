@@ -77,7 +77,7 @@ public class EventBooking_Dining_Dis1 extends AppCompatActivity {
 
 
         second_arrow_up.setOnClickListener(view -> {
-            Intent intent = new Intent(EventBooking_Dining_Dis1.this, EventBooking_GregoryBallroom_Dis2.class);
+            Intent intent = new Intent(EventBooking_Dining_Dis1.this, EventBooking_Dining_Dis2.class);
 
             Pair[] pairs = new Pair[1];
             pairs[0] = new Pair<View, String>(second_arrow_up, "background_image_transition");
