@@ -97,6 +97,6 @@
         android:textAllCaps="false"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/btnUpdate"/>
+        android:id="@+id/btnWUpdate"/>
 
 </LinearLayout>
