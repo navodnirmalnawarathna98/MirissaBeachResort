@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MirissaBeachResort">
         <activity
-
+            android:name=".OnlinePayment"
+            android:exported="false" />
+      <activity
             android:name=".Event_Gregory_Booking_Form"
             android:exported="false" />
         <activity
@@ -20,7 +22,6 @@
              android:exported="false" />
       <activity
             android:name=".CusWhaleBooking"
-
             android:exported="false" />
         <activity
             android:name=".CusBuffetBooking"
