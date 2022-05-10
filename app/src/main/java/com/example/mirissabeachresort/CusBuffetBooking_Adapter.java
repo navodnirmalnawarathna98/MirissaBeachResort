@@ -65,7 +65,7 @@ public class CusBuffetBooking_Adapter extends FirebaseRecyclerAdapter<CusBuffetB
                 EditText phone = view1.findViewById(R.id.txtPhone);
                 EditText email = view1.findViewById(R.id.txtEmail);
 
-                Button btnUpdate = view1.findViewById(R.id.btnUpdate);
+                Button btnUpdate = view1.findViewById(R.id.btnAdd);
 
                 name.setText(model.getName());
                 age.setText(model.getAge());
