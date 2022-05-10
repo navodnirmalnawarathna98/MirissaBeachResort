@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MirissaBeachResort">
         <activity
+            android:name=".CusWhaleBooking"
+            android:exported="false" />
+        <activity
             android:name=".CusBuffetBooking"
             android:exported="false" />
         <activity
@@ -35,7 +38,7 @@
         <activity
             android:name=".WhaleWatching_Details2"
             android:exported="false" />
-        <activity          
+        <activity
             android:name=".EventBooking_Dining_Dis2"
             android:exported="false" />
         <activity
