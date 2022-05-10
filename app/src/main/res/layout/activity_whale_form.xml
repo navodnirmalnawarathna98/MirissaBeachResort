@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.551" />
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/Wname"
         android:layout_width="263dp"
         android:layout_height="48dp"
         android:background="@drawable/whformstyle"
@@ -55,7 +55,7 @@
         app:layout_constraintVertical_bias="0.041" />
 
     <EditText
-        android:id="@+id/nic"
+        android:id="@+id/Wnic"
         android:layout_width="263dp"
         android:layout_height="48dp"
         android:autofillHints=""
@@ -73,11 +73,11 @@
         app:layout_constraintEnd_toEndOf="@+id/whimageView"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/Wname"
         app:layout_constraintVertical_bias="0.021" />
 
     <EditText
-        android:id="@+id/contactno"
+        android:id="@+id/Wphone"
         android:layout_width="263dp"
         android:layout_height="48dp"
         android:background="@drawable/whformstyle"
@@ -93,11 +93,11 @@
         app:layout_constraintEnd_toEndOf="@+id/whimageView"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/nic"
+        app:layout_constraintTop_toBottomOf="@+id/Wnic"
         app:layout_constraintVertical_bias="0.031" />
 
     <EditText
-        android:id="@+id/arrivaldate"
+        android:id="@+id/Warrivaldate"
         android:layout_width="263dp"
         android:layout_height="48dp"
         android:background="@drawable/whformstyle"
@@ -113,11 +113,11 @@
         app:layout_constraintEnd_toEndOf="@+id/whimageView"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/contactno"
+        app:layout_constraintTop_toBottomOf="@+id/Wphone"
         app:layout_constraintVertical_bias="0.034" />
 
     <EditText
-        android:id="@+id/selectboat"
+        android:id="@+id/Wselectboat"
         android:layout_width="263dp"
         android:layout_height="48dp"
         android:background="@drawable/whformstyle"
@@ -131,28 +131,30 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="@+id/whimageView"
         app:layout_constraintEnd_toEndOf="@+id/whimageView"
-        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/contactno"
-        app:layout_constraintVertical_bias="0.205" />
+        app:layout_constraintTop_toBottomOf="@+id/Warrivaldate"
+        app:layout_constraintVertical_bias="0.063" />
+
 
     <Button
-        android:id="@+id/btn_pay"
+        android:id="@+id/btn_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="76dp"
         android:background="@drawable/whbuttonstyle"
         android:hint="@string/btn_pay"
-        android:text="Payment"
+        android:text="Save"
         app:layout_constraintBottom_toBottomOf="@+id/whimageView"
         app:layout_constraintEnd_toEndOf="@+id/whimageView"
         app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/txtchildren" />
+        app:layout_constraintTop_toBottomOf="@+id/txtChildren"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/txtadult"
+        android:id="@+id/txtAdult"
         android:layout_width="263dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="204dp"
         android:background="@drawable/whformstyle"
         android:drawableStart="@drawable/whformstyle"
         android:drawablePadding="10dp"
@@ -164,16 +166,15 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="@+id/whimageView"
         app:layout_constraintEnd_toEndOf="@+id/whimageView"
-        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="@+id/whimageView"
         app:layout_constraintTop_toBottomOf="@+id/contactno"
         app:layout_constraintVertical_bias="0.373" />
 
-
     <EditText
-        android:id="@+id/txtchildren"
+        android:id="@+id/txtChildren"
         android:layout_width="263dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="140dp"
         android:background="@drawable/whformstyle"
         android:drawableStart="@drawable/whformstyle"
         android:drawablePadding="10dp"
@@ -185,6 +186,7 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="@+id/whimageView"
         app:layout_constraintEnd_toEndOf="@+id/whimageView"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="@+id/whimageView"
         app:layout_constraintTop_toBottomOf="@+id/contactno"
         app:layout_constraintVertical_bias="0.552" />
