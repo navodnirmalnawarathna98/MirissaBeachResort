@@ -124,7 +124,7 @@
         android:drawableStart="@drawable/whformstyle"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="@string/edittxt_selectboat"
+        android:hint="@string/edittxt_enterboat"
         android:inputType="date"
         android:paddingStart="20dp"
         android:textSize="16sp"
@@ -167,8 +167,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/whimageView"
         app:layout_constraintEnd_toEndOf="@+id/whimageView"
         app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/contactno"
-        app:layout_constraintVertical_bias="0.373" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_save"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/txtChildren"
@@ -188,7 +188,7 @@
         app:layout_constraintEnd_toEndOf="@+id/whimageView"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="@+id/whimageView"
-        app:layout_constraintTop_toBottomOf="@+id/contactno"
+        app:layout_constraintTop_toBottomOf="@+id/txtAdult"
         app:layout_constraintVertical_bias="0.552" />
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
