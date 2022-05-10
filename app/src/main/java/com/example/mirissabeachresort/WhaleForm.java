@@ -55,7 +55,7 @@ public class WhaleForm extends AppCompatActivity {
         });
 
 
-
+        //start Calander
         final Calendar calender  = Calendar.getInstance();
         int year = calender.get(Calendar.YEAR);
         int month = calender.get(Calendar.MONTH);
@@ -78,6 +78,8 @@ public class WhaleForm extends AppCompatActivity {
                 mDateFormat.setText(date);
             }
         };
+
+        //end Calander
 
 
 
