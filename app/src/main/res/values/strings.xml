@@ -18,4 +18,5 @@
     <string name="edittxt_adult">Adult(Above 18)</string>
     <string name="edittxt_adults">How Many Adult(Above 18)</string>
     <string name="editxt_children">How Many Children(Under 18)</string>
+    <string name="edittxt_enterboat">Enter Boat Number</string>
 </resources>
