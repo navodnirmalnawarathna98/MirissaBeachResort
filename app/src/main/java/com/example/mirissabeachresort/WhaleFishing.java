@@ -17,4 +17,10 @@ public class WhaleFishing extends AppCompatActivity {
     public void whaleDash(View view) {
         startActivity(new Intent(getApplicationContext(),WhaleWatching_Details.class));
     }
+
+
+    public void fishDash(View view) {
+        startActivity(new Intent(getApplicationContext(),FirstPage.class));
+    }
+
 }
