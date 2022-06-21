@@ -82,7 +82,7 @@ public class FoodBuffet extends AppCompatActivity {
     }
 
     public void buffet(View view) {
-        startActivity(new Intent(getApplicationContext(),FoodBuffet_Buffet_Dis1.class));
+        startActivity(new Intent(getApplicationContext(),FoodBuffet_Buffet_Dis2.class));
     }
 
     public void profile(View view) {
